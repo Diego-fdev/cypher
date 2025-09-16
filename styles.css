@@ -76,6 +76,22 @@ img {
   font-size: 24px;
 }
 
+.btn-main {
+  padding-inline: 12px;
+  padding-block: 4px;
+  width: fit-content;
+  background-color: var(--color-negro);
+  border: 2px solid var(--color-principal);
+}
+
+.btn-main span {
+  text-transform: uppercase;
+  font-family: var(--fuente-especial);
+  color: var(--color-principal);
+  font-weight: 900;
+  font-size: 16px;
+}
+
 /*ESTILOS NAV PRINCIPAL*/
 .main-navegacion {
   position: fixed;
@@ -127,4 +143,47 @@ img {
   .navegacion-desktop ul {
     column-gap: 24px;
   }
+}
+
+/*ESTILOS HERO*/
+
+.hero {
+  width: 100%;
+  min-height: 700px;
+  height: 100vh;
+  position: relative;
+}
+.hero .imagen-portada {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.hero .portada-uno-contenido {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.portada-uno-titulo {
+  color: var(--color-principal);
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-size: 30px;
+  row-gap: 5px;
+}
+
+.portada-uno-titulo span {
+  display: inline-block;
+  width: fit-content;
+  background-color: var(--color-negro);
+  padding-inline: 2px;
 }
