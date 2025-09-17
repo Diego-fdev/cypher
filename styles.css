@@ -30,6 +30,37 @@ h2 > span {
   font-family: var(--fuente-titulos);
 }
 
+h2,
+h2 > span {
+  font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  h2,
+  h2 > span {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1024px) {
+  h2,
+  h2 > span {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1280px) {
+  h2,
+  h2 > span {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 1440px) {
+  h2,
+  h2 > span {
+    font-size: 64px;
+  }
+}
+
 span,
 p,
 li,
@@ -338,14 +369,15 @@ img {
 .titulo-about span {
   color: var(--color-principal);
   text-transform: uppercase;
-  font-size: 32px;
   line-height: 1.1;
 }
 
 .contenido-about {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  gap: 24px;
+  max-width: 500px;
+  margin-inline: auto;
 }
 
 .contenido-about p {
@@ -354,6 +386,29 @@ img {
   line-height: 2;
 }
 
+@media (min-width: 768px) {
+  .contenido-about {
+    flex-direction: row;
+    max-width: 1280px;
+  }
+  .contenido-about p {
+    flex: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .about {
+    padding-block: 100px;
+    padding-bottom: 50px;
+  }
+  .contenido-about p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1564px) {
+  .about {
+    padding-inline: 0px;
+  }
+}
 /*SECTION TRABAJOS*/
 .trabajos {
   background-color: var(--color-blanco);
