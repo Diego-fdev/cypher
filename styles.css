@@ -205,13 +205,12 @@ img {
 }
 .navegacion-desktop ul li {
   color: var(--color-blanco);
-  font-family: var(--fuente-titulos);
   text-transform: uppercase;
   font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  .navegacion-mobile {
+  .btn-mobile {
     display: none;
   }
   .navegacion-desktop {
@@ -225,6 +224,48 @@ img {
   .navegacion-desktop ul {
     column-gap: 24px;
   }
+}
+
+.modal-nav-mobile {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  transform: translateY(-400px);
+  left: 0;
+  background-color: var(--color-negro);
+  z-index: 99;
+}
+
+.modal-nav-mobile header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+}
+.navegacion-mobile {
+  height: calc(100vh - 64px);
+}
+
+.navegacion-mobile ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  justify-content: center;
+}
+
+.navegacion-mobile ul li {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.modal-nav-mobile {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /*ESTILOS HERO*/
@@ -756,4 +797,16 @@ img {
   .logo-footer {
     font-size: 42px;
   }
+}
+
+/*CLASES JAVASCRIPT*/
+.modal-visible {
+  opacity: 100;
+  visibility: visible;
+  transition: all 0.25s ease-in-out;
+  transform: translateY(0px);
+}
+
+.body-no-overflow {
+  overflow: hidden;
 }
