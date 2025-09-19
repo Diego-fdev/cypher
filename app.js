@@ -19,6 +19,7 @@ const modalNavMobile = document.querySelector(".modal-nav-mobile");
 const btnCloseNavMobile = document.querySelector(".btn-cerrar-modal");
 const btnOpenNavMobile = document.querySelector(".btn-menu-mobile");
 const body = document.querySelector("body");
+const linksNavMobile = document.querySelectorAll(".link-nav-mobile");
 
 const toggleModalMobile = (visibilidad) => {
   if (visibilidad) {
@@ -36,4 +37,11 @@ btnOpenNavMobile.addEventListener("click", () => {
 
 btnCloseNavMobile.addEventListener("click", () => {
   toggleModalMobile(false);
+});
+
+linksNavMobile.forEach((link) => {
+  console.log("clicked");
+  link.addEventListener("click", () => {
+    toggleModalMobile(false);
+  });
 });
