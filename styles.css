@@ -39,10 +39,17 @@ a {
 a:hover {
   color: var(--color-principal);
 }
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
 
 h2,
 h2 > span {
   font-size: 28px;
+  text-transform: uppercase;
 }
 
 h3,
@@ -136,11 +143,6 @@ img {
 .main-sections {
   padding-top: 80px;
   padding-bottom: 40px;
-}
-
-.titulo-main-section,
-.titulo-main-section span {
-  text-transform: uppercase;
 }
 
 /*ESTILOS LOGO*/
@@ -418,16 +420,8 @@ img {
   row-gap: 48px;
 }
 
-.titulo-about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.titulo-about span {
+.about h2 span {
   color: var(--color-principal);
-  text-transform: uppercase;
-  line-height: 1.1;
 }
 
 .contenido-about {
@@ -591,16 +585,8 @@ img {
   gap: 48px;
 }
 
-.titulo-partners {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.titulo-partners span {
+.partners h2 span {
   color: var(--color-principal);
-  text-transform: uppercase;
-  line-height: 1.1;
 }
 
 .grid-partners {
