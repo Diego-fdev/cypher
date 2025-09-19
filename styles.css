@@ -13,6 +13,7 @@
   margin: 0;
   box-sizing: border-box;
   color: var(--color-blanco);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,6 +29,15 @@ h3,
 h1 > span,
 h2 > span {
   font-family: var(--fuente-titulos);
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-principal);
 }
 
 h2,
@@ -779,7 +789,8 @@ img {
   list-style: none;
 }
 
-.footer ul li span {
+.footer ul li a,
+footer ul li span {
   text-transform: uppercase;
   font-weight: medium;
   font-size: 14px;
